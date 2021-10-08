@@ -10,6 +10,7 @@
     <meta name="description" content="trusted place for betting" />
     <meta name="keywords" content="" />
     <meta name="author" content="vsk" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" />
     <!--Replace with your tailwind.css once created-->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
@@ -18,6 +19,26 @@
       .gradient {
         background: #2f4f4f;
       }
+      
+      .float{
+        position:fixed;
+        width:60px;
+        height:60px;
+        bottom:40px;
+        right:40px;
+        background-color:#25d366;
+        color:#FFF;
+        border-radius:50px;
+        text-align:center;
+        font-size:30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index:100;
+}
+
+    .my-float{
+      	margin-top:16px;
+}
+ 
     </style>
   </head>
   <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
@@ -554,11 +575,20 @@
         </a>
       </button>
     </section>
+    <a href="https://api.whatsapp.com/send?
+         phone=7310747066
+         &text=Hola%information%."
+   		 class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a>
     <!--Footer-->
     
     <!-- jQuery if you need it
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   -->
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="floating-wpp.min.js"></script>
+    <link rel="stylesheet" href="floating-wpp.min.css">
     <script>
       var scrollpos = window.scrollY;
       var header = document.getElementById("header");
